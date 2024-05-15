@@ -1,0 +1,48 @@
+<%- include("../../../shared/partials/navigation") %>
+
+<header class="masthead" style="background-image: url('static/img/newscreater.jpg')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="page-heading">
+                    <h1>Newscreater</h1>
+                    <span class="subheading">For administration only</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main Content-->
+<main class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <p>Fill out the form below to create a news</p>
+                <div id="contact_info" class="my-5">
+
+                        <div class="form-floating">
+                            <input class="form-control" id="posted_by" type="text" value="Voksenopplæring"/>
+                            <label for="posted_by">Posted by</label>
+                        </div>
+                        <div class="form-floating">
+                            <input class="form-control" id="title" type="text"/>
+                            <label for="title">Title</label>
+                        </div>
+                        <div class="form-floating">
+                            <input class="form-control" id="subtitle" type="text"/>
+                            <label for="subtitle">Subtitle</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="content" style="height: 12rem"></textarea>
+                            <label for="content">Content</label>
+                        </div>
+                        <!-- Submit Button-->
+                        <button class="btn btn-primary text-uppercase mt-4" id="submitButton">Create</button>
+                    
+                </div>
+            </div>
+        </div>     
+    </div>
+</main>
+
+<%- include("../../../shared/partials/footer") %>
